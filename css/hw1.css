@@ -1,0 +1,170 @@
+
+
+body {
+    background: #ffffff;
+    margin: 2% 2%;
+    padding: 1%;
+    width: 94%
+}
+
+/*setting the table width, centering it in the section, setting a font family*/
+table {
+    margin:auto;
+    width: 75%;
+    font-family: Arial, sans-serif;
+    text-shadow: 1px 1px #b1b1b1;
+}
+
+
+tr,th {
+    margin: 1%;
+    padding: 1%;
+}
+
+/*formatting the table heading borders, background gradient and colour and one extra property - uppercase text*/
+th {
+    border-width: 1px 1px 3px 1px; 
+    border-style: solid; 
+    border-color: #1b5a1b;
+    line-height: 2;
+    text-transform: uppercase;
+    background: #d8ffd8;
+    background: linear-gradient(#88cf88,#d8ffd8);
+    background: -webkit-linear-gradient(#88cf88,#d8ffd8);
+    background: -moz-linear-gradient(#88cf88,#d8ffd8);
+    background: -o-linear-gradient(#88cf88,#d8ffd8);
+}
+
+/*setting the default properties for all rows*/
+tr {
+	background: #F2F2F2;
+    opacity: 0.7;
+}
+
+/*what happens when you hover over a row*/
+tr:hover {
+    opacity: 1;
+}
+
+/*default properties for all cells*/
+td {
+    border: 1px solid #ffffff;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin: 1%;
+    padding: 1%;
+    
+}
+
+/*overriding defaults for the first row only, which makes the table headings stay fully opaque*/
+tr:first-child {
+    opacity: 1;
+}
+
+/*all table headings which are a direct child of the first table row only - rounds the top corners of the table headings*/
+tr:first-child>th {
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
+
+/*selecting the first heading in the first row only to put the first column header text left too*/
+tr:first-child>th:first-child {
+    text-align:left;
+}
+
+/*selecting only the first cell in each row effectively selects only column 1*/
+td:first-child {
+    text-align: left;
+}
+
+
+h1 {
+    text-transform: uppercase;    
+}
+
+h1 {
+    text-align:center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+h2 {
+    color: #000000;
+}
+
+
+header {
+    background: #999999 url('../images/flywheel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 98%;
+    padding: 1%;
+}
+
+/*styling for the nav bar*/
+nav {
+    margin: 2% auto;
+    width: 100%;
+    text-align:center;
+}
+
+/*styling the link buttons inside the nav bar */
+nav a {
+    background: #ffffff99;
+    color: #000000;
+    text-align:center;
+    padding: 30px 40px 30px 40px;
+    margin: 0px 20px;
+    text-decoration: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    width: 10%;
+    display: inline-block;
+}
+
+/*how the link button will look different for the page you're currently on*/
+.active {
+    color: #000000;
+    background: #ffffff;
+}
+
+img {
+    margin: 10px auto;
+    border: 3px solid #000000;
+    width: 70%;
+    display: block;
+}
+
+section {
+    background: #ffffff;
+    padding: 10px;
+}
+
+/*the left hand bit of the page*/
+aside {
+    display: inline-block;
+    width: 20%;
+    background: #1b5a1b;
+    float: left;
+    height: 100vh;
+}
+
+.right {
+    display: inline-block;
+    width: 75%
+}
+
+
+
+
+
+
+
+
